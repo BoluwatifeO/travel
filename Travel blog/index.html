@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolu’s Korea Travels</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🇰🇷 Bolu’s Korea Travel Blog</h1>
+    <p>Exploring cities, food, and hidden gems across Korea ✨</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="posts/seoul.html">Seoul</a>
+      <a href="posts/busan.html">Busan</a>
+      <a href="posts/gunsan.html">Gunsan</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome to my travel diary!</h2>
+      <p>
+        Hi, I’m Bolu 👋. I’m on a journey across South Korea to explore
+        amazing cities, taste delicious food, and discover unique cultural
+        experiences. Join me as I share my adventures!
+      </p>
+    </section>
+
+    <section class="latest-posts">
+      <h2>📝 Latest Posts</h2>
+      <div class="post-preview">
+        <img src="assets/images/seoul.jpg" alt="Seoul cityscape">
+        <h3><a href="posts/seoul.html">Exploring Seoul</a></h3>
+        <p>A mix of modern skyscrapers, palaces, and vibrant street food...</p>
+      </div>
+
+      <div class="post-preview">
+        <img src="assets/images/busan.jpg" alt="Busan beach">
+        <h3><a href="posts/busan.html">A Weekend in Busan</a></h3>
+        <p>Relaxing at Haeundae Beach and exploring colorful Gamcheon village...</p>
+      </div>
+
+      <div class="post-preview">
+        <img src="assets/images/museum2.JPG" alt="Gunsan">
+        <h3><a href="posts/gunsan.html">Discovering Gunsan</a></h3>
+        <p>A quieter port city with history, cafes, and coastal views...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>✈️ Made with love while traveling in Korea | Bolu’s Travel Blog 2025</p>
+  </footer>
+  <button onclick="scrollToTop()" id="scrollTopBtn">⬆️ Top</button>
+
+<script>
+  // Show the button only when scrolled down
+  window.onscroll = function() {
+    let btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Smooth scroll back to top
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
